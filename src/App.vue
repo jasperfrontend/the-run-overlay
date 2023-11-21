@@ -4,11 +4,15 @@
     <div v-if="posts.acf.player_1_winner" class="winner winner_p1">
       <div class="overlay">
         <div class="text">
-          <div class="name" v-if="posts.acf.player_1_name">{{ posts.acf.player_1_name }}</div>
-          <div class="name" v-else>Loading name&hellip;</div>
-          <div class="body">
-            is the winner!
-          </div> <!-- .body -->
+          <Transition>
+            <div class="name" v-if="posts.acf.player_1_name">{{ posts.acf.player_1_name }}</div>
+            <div class="name" v-else>Loading name&hellip;</div>
+          </Transition>
+          <Transition>
+            <div class="body">
+              is the winner!
+            </div> <!-- .body -->
+          </Transition>
         </div> <!-- .text -->
       </div> <!-- .overlay -->
     </div> <!-- .winner -->
