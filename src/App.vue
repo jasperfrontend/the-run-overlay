@@ -1,7 +1,7 @@
 <template>
   <div class="container">
 
-    <div v-if="player_1_winner" class="winner_p1">
+    <div v-if="acf.player_1_winner" class="winner_p1">
       <div class="overlay">
         <div class="text">
           <div class="name">Toocanoook</div>
@@ -12,7 +12,7 @@
       </div>
     </div>
     
-    <div v-if="player_2_winner" class="winner_p1">
+    <div v-if="acf.player_2_winner" class="winner_p1">
       <div class="overlay">
         <div class="text">
           <div class="name">Jospoooooor</div>
