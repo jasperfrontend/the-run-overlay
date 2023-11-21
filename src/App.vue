@@ -74,7 +74,6 @@
             </div>
           </div>
             <div class="flex row justify-content-space-between col col-gates">
-              <div class="gate-status"><img class="icon" src="./assets/Gates/Gates-1.png" alt="0 Gates"></div>
             </div>
             <div class="flex row col col-player-icons col-player-two-icons">
               <div class="flex row justify-content-space-between player-two landmarks">
