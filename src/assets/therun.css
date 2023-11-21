@@ -125,7 +125,7 @@ img {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 101;
+    z-index: 10;
 }
 .fireworks video {
     width: 100vw;
