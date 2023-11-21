@@ -5,7 +5,7 @@
       <div class="overlay">
         <div class="text">
           <div class="name">{{ posts.acf.player_1_name }}</div>
-          <div class="avatar"><img src="https://decapi.me/twitch/avatar/ + " + {{ posts.acf.player_2_name }} alt=""></div>
+          <div class="avatar"></div>
           <div class="body">
             Has won!
           </div>
@@ -18,7 +18,7 @@
       <div class="overlay">
         <div class="text">
           <div class="name">{{ posts.acf.player_2_name }}</div>
-          <div class="avatar"><img src="https://decapi.me/twitch/avatar/ + " + {{ posts.acf.player_2_name }} alt=""></div>
+          <div class="avatar"></div>
           <div class="body">
             Has won!
           </div>
