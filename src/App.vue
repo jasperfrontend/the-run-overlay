@@ -6,7 +6,6 @@
         <div class="text">
           <div class="name" v-if="posts.acf.player_1_name">{{ posts.acf.player_1_name }}</div>
           <div class="name" v-else>Loading name&hellip;</div>
-          <div class="avatar"></div>
           <div class="body">
             is the winner!
           </div> <!-- .body -->
@@ -19,7 +18,6 @@
         <div class="text">
           <div class="name" v-if="posts.acf.player_2_name">{{ posts.acf.player_2_name }}</div>
           <div class="name" v-else>Loading name&hellip;</div>
-          <div class="avatar"></div>
           <div class="body">
             is the winner!
           </div> <!-- .body -->
@@ -29,7 +27,7 @@
 
     <div class="fireworks" v-if="posts.acf.player_1_winner || posts.acf.player_2_winner">
       <video autoplay muted loop>
-        <source src="https://host.run.city/wp-content/uploads/2023/11/confetti-transparent.webm" type="video/webm">
+        <source src="https://host.run.city/wp-content/uploads/2023/11/twinkle.webm" type="video/webm">
       </video>
     </div>
 
@@ -133,6 +131,7 @@ export default {
   data() {
     return {
       posts: null,
+      avatars: null,
     };
   },
   created() {
