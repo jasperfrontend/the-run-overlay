@@ -97,19 +97,26 @@ img {
 
 
 /* WINNER OVERLAY */
-.overlay {
+.winner .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    z-index: 100;
+    text-align: center;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.overlay .text .name {
+.winner .overlay .text .name {
     font-size: 200px;
+}
+.winner .overlay .text .body {
+    font-size: 130px;
 }
 
 /* .col {
