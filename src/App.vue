@@ -8,11 +8,11 @@
           <div class="avatar"></div>
           <div class="body">
             is the winner!
-          </div>
-        </div>
+          </div> <!-- .body -->
+        </div> <!-- .text -->
         <div class="fireworks"></div>
-      </div>
-    </div>
+      </div> <!-- .overlay -->
+    </div> <!-- .winner -->
     
     <div v-if="posts.acf.player_2_winner" class="winner winner_p1">
       <div class="overlay">
@@ -21,24 +21,24 @@
           <div class="avatar"></div>
           <div class="body">
             is the winner!
-          </div>
-        </div>
+          </div> <!-- .body -->
+        </div> <!-- .text -->
         <div class="fireworks"></div>
-      </div>
-    </div>
+      </div> <!-- .overlay -->
+    </div> <!-- .winner -->
 
     <div class="bar">
       <div class="bar-top">
         <div class="col col-player-name col-player-one">
-          <h2>{{ posts.acf.player_1_name }}</h2>
+          <h2 v-if="posts.acf.player_1_name">{{ posts.acf.player_1_name }}</h2>
+          <h2 v-else="posts.acf.player_1_name">Loading name&hellip;</h2>
         </div>
         <div class="col col-hints">
-          <Transition>
-            <p>{{ posts.acf.hint }}</p>
-          </Transition>
+          <p>{{ posts.acf.hint }}</p>
         </div>
         <div class="col col-player-name col-player-two">
-          <h2>{{ posts.acf.player_2_name }}</h2>
+          <h2 v-if="posts.acf.player_2_name">{{ posts.acf.player_2_name }}</h2>
+          <h2 v-else="posts.acf.player_2_name">Loading name&hellip;</h2>
         </div>
       </div> <!-- .bar-top -->
         <div class="bar-bottom">
@@ -118,7 +118,7 @@
             </div>
         </div> <!-- bar.bottom -->
     </div> <!-- .bar -->
-  </div>
+  </div> <!-- .container -->
 </template>
 
 <script>
@@ -130,7 +130,7 @@ export default {
   },
   created() {
     this.fetchWordPressData();
-    setInterval(this.fetchWordPressData, 10000); // Fetch data every 10 seconds, I bet the host will like that
+    setInterval(this.fetchWordPressData, 10000);
   },
   methods: {
     async fetchWordPressData() {
