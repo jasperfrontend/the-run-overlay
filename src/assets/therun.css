@@ -48,6 +48,7 @@ img {
   opacity: 0;
 }
 
+
 /* STRUCTURE */
 
 .flex {
@@ -91,6 +92,20 @@ img {
     display: flex;
     background-color: black;
     justify-content: space-between;
+}
+
+
+
+/* WINNER OVERLAY */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* .col {
