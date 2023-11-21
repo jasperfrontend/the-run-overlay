@@ -1,5 +1,27 @@
 <template>
   <div class="container">
+
+    <div v-if="player_1_winner" class="winner_p1">
+      <div class="overlay">
+        <div class="text">
+          <div class="name">Toocanoook</div>
+          <div class="avatar"></div>
+          <div class="body"></div>
+        </div>
+        <div class="fireworks"></div>
+      </div>
+    </div>
+    
+    <div v-if="player_2_winner" class="winner_p1">
+      <div class="overlay">
+        <div class="text">
+          <div class="name">Jospoooooor</div>
+          <div class="avatar"></div>
+          <div class="body"></div>
+        </div>
+        <div class="fireworks"></div>
+      </div>
+    </div>
     <div class="bar">
       <div class="bar-top">
         <div class="col col-player-name col-player-one">
@@ -108,7 +130,6 @@ export default {
   },
   methods: {
     async fetchWordPressData() {
-      // Fetch data from WP JSON API and set it to the data property
       const response = await fetch('https://host.run.city/wp-json/wp/v2/pages/2');
       this.posts = await response.json();
     },
