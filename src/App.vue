@@ -4,7 +4,7 @@
     <div v-if="posts.acf.player_1_winner" class="winner_p1">
       <div class="overlay">
         <div class="text">
-          <div class="name">Toocanoook</div>
+          <div class="name">{{ posts.acf.player_1_name }}</div>
           <div class="avatar"></div>
           <div class="body"></div>
         </div>
@@ -15,8 +15,8 @@
     <div v-if="posts.acf.player_2_winner" class="winner_p1">
       <div class="overlay">
         <div class="text">
-          <div class="name">Jospoooooor</div>
-          <div class="avatar"></div>
+          <div class="name">{{ posts.acf.player_2_name }}</div>
+          <div class="avatar"><img src="https://decapi.me/twitch/avatar/ + " + {{ posts.acf.player_2_name }} alt=""></div>
           <div class="body"></div>
         </div>
         <div class="fireworks"></div>
