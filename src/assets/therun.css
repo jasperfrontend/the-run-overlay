@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Pragati+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Pragati+Narrow:wght@400;700&family=Sanchez&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +19,7 @@ img {
 
 /* STYLING */
 .col-player-name h2 {
+    font-family: 'Sanchez', serif;
     font-size: 3rem;
     padding: 5px;
     line-height: 1;
