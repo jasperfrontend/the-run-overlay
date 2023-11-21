@@ -119,6 +119,18 @@ img {
     font-size: 130px;
 }
 
+.fireworks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 101;
+}
+.fireworks video {
+    width: 100vw;
+    height: auto;
+}
 /* .col {
     border: 2px solid pink;
     border-collapse: collapse;
