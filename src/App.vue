@@ -86,45 +86,47 @@
                 </Transition>
               </div>
             </div>
+          </div> <!-- .col-player-one-icons -->
+          <div class="flex row justify-content-space-between col col-gates">
+            <p v-if="posts.acf.hint">{{ posts.acf.hint }}</p>
+            <p v-else="posts.acf.hint">Loading&hellip;</p>
           </div>
-            <div class="flex row justify-content-space-between col col-gates">
-            </div>
-            <div class="flex row col col-player-icons col-player-two-icons">
-              <div class="flex row justify-content-space-between player-two landmarks">
-                <div class="landmark-6">
-                  <Transition>
-                    <img :class="posts.acf.lm_p2.landmark_6 ? 'icon' : 'icon disabled'" src="./assets/Landmarks/LM6.png" alt="LM6">
-                  </Transition>
-                </div>
-                <div class="landmark-5">
-                  <Transition>
-                    <img :class="posts.acf.lm_p2.landmark_5 ? 'icon' : 'icon disabled'" src="./assets/Landmarks/LM5.png" alt="LM5">
-                  </Transition>
-                </div>
-                <div class="landmark-4">
-                  <Transition>
-                    <img :class="posts.acf.lm_p2.landmark_4 ? 'icon' : 'icon disabled'" src="./assets/Landmarks/LM4.png" alt="LM4">
-                  </Transition>
-                </div>
+          <div class="flex row col col-player-icons col-player-two-icons">
+            <div class="flex row justify-content-space-between player-two landmarks">
+              <div class="landmark-6">
+                <Transition>
+                  <img :class="posts.acf.lm_p2.landmark_6 ? 'icon' : 'icon disabled'" src="./assets/Landmarks/LM6.png" alt="LM6">
+                </Transition>
               </div>
-              <div class="flex row justify-content-space-between player-two-gates">
-                <div class="gate gate-3">
-                  <Transition>
-                    <img :class="posts.acf.gates_p2.gate_3_player_2 ? 'icon' : 'icon disabled'" src="./assets/Gates/G3.png" alt="G3">
-                  </Transition>
-                </div>
-                <div class="gate gate-2">
-                  <Transition>
-                    <img :class="posts.acf.gates_p2.gate_2_player_2 ? 'icon' : 'icon disabled'" src="./assets/Gates/G2.png" alt="G2">
-                  </Transition>
-                </div>
-                <div class="gate gate-1">
-                  <Transition>
-                    <img :class="posts.acf.gates_p2.gate_1_player_2 ? 'icon' : 'icon disabled'" src="./assets/Gates/G1.png" alt="G1">
-                  </Transition>
-                </div>
+              <div class="landmark-5">
+                <Transition>
+                  <img :class="posts.acf.lm_p2.landmark_5 ? 'icon' : 'icon disabled'" src="./assets/Landmarks/LM5.png" alt="LM5">
+                </Transition>
+              </div>
+              <div class="landmark-4">
+                <Transition>
+                  <img :class="posts.acf.lm_p2.landmark_4 ? 'icon' : 'icon disabled'" src="./assets/Landmarks/LM4.png" alt="LM4">
+                </Transition>
               </div>
             </div>
+            <div class="flex row justify-content-space-between player-two-gates">
+              <div class="gate gate-3">
+                <Transition>
+                  <img :class="posts.acf.gates_p2.gate_3_player_2 ? 'icon' : 'icon disabled'" src="./assets/Gates/G3.png" alt="G3">
+                </Transition>
+              </div>
+              <div class="gate gate-2">
+                <Transition>
+                  <img :class="posts.acf.gates_p2.gate_2_player_2 ? 'icon' : 'icon disabled'" src="./assets/Gates/G2.png" alt="G2">
+                </Transition>
+              </div>
+              <div class="gate gate-1">
+                <Transition>
+                  <img :class="posts.acf.gates_p2.gate_1_player_2 ? 'icon' : 'icon disabled'" src="./assets/Gates/G1.png" alt="G1">
+                </Transition>
+              </div>
+            </div>
+          </div> <!-- .col-player-two-icons -->
         </div> <!-- bar.bottom -->
     </div> <!-- .bar -->
   </div> <!-- .container -->
@@ -150,15 +152,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 2s ease;
-}
-
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
-}
-</style>
