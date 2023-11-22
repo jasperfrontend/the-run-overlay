@@ -57,7 +57,7 @@ img {
   width: 100%;
   display: flex;
   background-color: black;
-  background-color: rgba(0,0,0,.8);
+  background-color: rgba(0,0,0,.88);
   justify-content: space-between;
 }
 
