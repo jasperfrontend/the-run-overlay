@@ -52,6 +52,7 @@
       <div class="bar-bottom">
         <div class="flex row col col-player-icons col-player-one-icons">
           <div class="flex row justify-content-space-between player-one-gates">
+
             <div class="gate gate-1">
               <Transition>
                 <img :class="posts && posts.acf && posts.acf.gates_p1.gate_1_player_1 ? 'icon' : 'icon disabled'" src="./assets/Gates/G1.png" width="60" height="60" alt="G1">
@@ -62,11 +63,13 @@
                 <img :class="posts && posts.acf && posts.acf.gates_p1.gate_2_player_1 ? 'icon' : 'icon disabled'" src="./assets/Gates/G2.png" width="60" height="60" alt="G2">
               </Transition>
             </div>
+
             <div class="gate gate-3">
               <Transition>
                 <img :class="posts && posts.acf && posts.acf.gates_p1.gate_3_player_1 ? 'icon' : 'icon disabled'" src="./assets/Gates/G3.png" width="60" height="60" alt="G3">
               </Transition>
             </div>
+
           </div>
           <div class="flex row justify-content-space-between player-one landmarks">
             <div class="landmark landmark-1">
