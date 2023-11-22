@@ -133,6 +133,15 @@ img {
     text-align: center;
 }
 
+.col-gates {
+    align-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.col-gates p {
+    color: var(--white);
+}
+
 :root {
     --text-shadow: 2px 2px 2px rgba(15,15,15,.8);
     --white: #fff;

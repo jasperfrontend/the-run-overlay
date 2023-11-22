@@ -42,8 +42,7 @@
           <h2 v-else="posts.acf.player_1_name">Loading name&hellip;</h2>
         </div>
         <div class="col col-hints">
-          <p v-if="posts.acf.hint">{{ posts.acf.hint }}</p>
-          <p v-else="posts.acf.hint">Loading&hellip;</p>
+
         </div>
         <div class="col col-player-name col-player-two">
           <h2 v-if="posts.acf.player_2_name">{{ posts.acf.player_2_name }}</h2>
