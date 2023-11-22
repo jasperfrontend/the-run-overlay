@@ -144,10 +144,10 @@ img {
 
 /* icons landmarks */
 .player-one.landmarks {
-    padding-left: 2em;
+    padding-left: 1em;
 }
 .player-two.landmarks {
-    padding-right: 2em;
+    padding-right: 1em;
 }
 
 :root {
