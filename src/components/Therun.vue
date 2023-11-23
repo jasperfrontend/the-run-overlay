@@ -56,19 +56,19 @@
 
             <div class="gate gate-1">
               <Transition>
-                <img :class="posts && posts.gates_p1.gate_1_player_1 ? 'icon' : 'icon disabled'" src="../assets/SVG/Gates/G1.png" width="60" height="60" alt="G1">
+                <img :class="posts && posts.gates_p1.gate_1_player_1 ? 'icon' : 'icon disabled'" src="../assets/SVG/Gates/G1.svg" width="60" height="60" alt="G1">
               </Transition>
             </div>
             
             <div class="gate gate-2">
               <Transition>
-                <img :class="posts && posts.gates_p1.gate_2_player_1 ? 'icon' : 'icon disabled'" src="../assets/SVG/Gates/G2.png" width="60" height="60" alt="G2">
+                <img :class="posts && posts.gates_p1.gate_2_player_1 ? 'icon' : 'icon disabled'" src="../assets/SVG/Gates/G2.svg" width="60" height="60" alt="G2">
               </Transition>
             </div>
 
             <div class="gate gate-3">
               <Transition>
-                <img :class="posts && posts.gates_p1.gate_3_player_1 ? 'icon' : 'icon disabled'" src="../assets/SVG/Gates/G3.png" width="60" height="60" alt="G3">
+                <img :class="posts && posts.gates_p1.gate_3_player_1 ? 'icon' : 'icon disabled'" src="../assets/SVG/Gates/G3.svg" width="60" height="60" alt="G3">
               </Transition>
             </div>
 
@@ -76,17 +76,17 @@
           <div class="flex row justify-content-space-between player-one landmarks">
             <div class="landmark landmark-1">
               <Transition>
-                <img :class="posts && posts.lm_p1.landmark_1 ? 'icon' : 'icon disabled'" src="../assets/SVG/Landmarks/LM1.png" width="60" height="60" alt="LM1">
+                <img :class="posts && posts.lm_p1.landmark_1 ? 'icon' : 'icon disabled'" src="../assets/SVG/Landmarks/LM1.svg" width="60" height="60" alt="LM1">
               </Transition>
             </div>
             <div class="landmark landmark-2">
               <Transition>
-                <img :class="posts && posts.lm_p1.landmark_2 ? 'icon' : 'icon disabled'" src="../assets/SVG/Landmarks/LM2.png" width="60" height="60" alt="LM2">
+                <img :class="posts && posts.lm_p1.landmark_2 ? 'icon' : 'icon disabled'" src="../assets/SVG/Landmarks/LM2.svg" width="60" height="60" alt="LM2">
               </Transition>
             </div>
             <div class="landmark landmark-3">
               <Transition>
-                <img :class="posts && posts.lm_p1.landmark_3 ? 'icon' : 'icon disabled'" src="../assets/SVG/Landmarks/LM3.png" width="60" height="60" alt="LM3">
+                <img :class="posts && posts.lm_p1.landmark_3 ? 'icon' : 'icon disabled'" src="../assets/SVG/Landmarks/LM3.svg" width="60" height="60" alt="LM3">
               </Transition>
             </div>
           </div>
@@ -99,35 +99,35 @@
           <div class="flex row justify-content-space-between player-two landmarks">
             <div class="landmark-6">
               <Transition>
-                <img :class="posts && posts.lm_p2.landmark_6 ? 'icon' : 'icon disabled'" src="../assets/SVG/Landmarks/LM6.png" width="60" height="60" alt="LM6">
+                <img :class="posts && posts.lm_p2.landmark_6 ? 'icon' : 'icon disabled'" src="../assets/SVG/Landmarks/LM6.svg" width="60" height="60" alt="LM6">
               </Transition>
             </div>
             <div class="landmark-5">
               <Transition>
-                <img :class="posts && posts.lm_p2.landmark_5 ? 'icon' : 'icon disabled'" src="../assets/SVG/Landmarks/LM5.png" width="60" height="60" alt="LM5">
+                <img :class="posts && posts.lm_p2.landmark_5 ? 'icon' : 'icon disabled'" src="../assets/SVG/Landmarks/LM5.svg" width="60" height="60" alt="LM5">
               </Transition>
             </div>
             <div class="landmark-4">
               <Transition>
-                <img :class="posts && posts.lm_p2.landmark_4 ? 'icon' : 'icon disabled'" src="../assets/SVG/Landmarks/LM4.png" width="60" height="60" alt="LM4">
+                <img :class="posts && posts.lm_p2.landmark_4 ? 'icon' : 'icon disabled'" src="../assets/SVG/Landmarks/LM4.svg" width="60" height="60" alt="LM4">
               </Transition>
             </div>
           </div>
           <div class="flex row justify-content-space-between player-two-gates">
             <div class="gate gate-3">
               <Transition>
-                <img :class="posts && posts.gates_p2.gate_3_player_2 ? 'icon' : 'icon disabled'" src="../assets/SVG/Gates/G3.png" width="60" height="60" alt="G3">
+                <img :class="posts && posts.gates_p2.gate_3_player_2 ? 'icon' : 'icon disabled'" src="../assets/SVG/Gates/G3.svg" width="60" height="60" alt="G3">
               </Transition>
             </div>
             <div class="gate gate-2">
               <Transition>
-                <img :class="posts && posts.gates_p2.gate_2_player_2 ? 'icon' : 'icon disabled'" src="../assets/SVG/Gates/G2.png" width="60" height="60" alt="G2">
+                <img :class="posts && posts.gates_p2.gate_2_player_2 ? 'icon' : 'icon disabled'" src="../assets/SVG/Gates/G2.svg" width="60" height="60" alt="G2">
               </Transition>
             </div>
 
             <div class="gate gate-1">
               <Transition>
-                <img :class="posts && posts.gates_p2.gate_1_player_2 ? 'icon' : 'icon disabled'" src="../assets/SVG/Gates/G1.png" width="60" height="60" alt="G1">
+                <img :class="posts && posts.gates_p2.gate_1_player_2 ? 'icon' : 'icon disabled'" src="../assets/SVG/Gates/G1.svg" width="60" height="60" alt="G1">
               </Transition>
             </div>
 
