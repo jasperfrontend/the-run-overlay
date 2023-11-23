@@ -37,7 +37,7 @@
         </video>
       </div>
     </span>
-    
+
     <div class="bar">
       <div class="bar-top">
         <div class="col col-player-name col-player-one">
@@ -147,7 +147,7 @@ export default {
   },
   created() {
     this.fetchWordPressData();
-    setInterval(this.fetchWordPressData, 10000);
+    setInterval(this.fetchWordPressData, 6000);
   },
   methods: {
     async fetchWordPressData() {
