@@ -158,7 +158,7 @@ export default {
   },
   methods: {
     async fetchWordPressData() {
-      const wpData = await fetch("https://host.run.city/wp-json/wp/v2/pages/2");
+      const wpData = await fetch(process.env.WPJSON);
       let retrieved = await wpData.json();
       this.posts = retrieved.acf;
     },
