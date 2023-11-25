@@ -4,15 +4,15 @@
       <div class="winner winner_p1">
         <div class="overlay">
           <div class="text">
-            <Transition>
+            
               <div class="name" v-if="posts && posts.player_1_name">{{ posts && posts.player_1_name }}</div>
               <div class="name" v-else>Player 1</div>
-            </Transition>
-            <Transition>
+            
+            
               <div class="body">
                 is the winner!
               </div> <!-- .body -->
-            </Transition>
+            
           </div> <!-- .text -->
         </div> <!-- .overlay -->
       </div> <!-- .winner -->
@@ -61,40 +61,35 @@
           <div class="flex row justify-content-space-between player-one-gates">
 
             <div class="gate gate-1">
-              <Transition>
-                <img :class="['icon', (posts && posts.gates_p1.gate_1_player_1 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Gates/G1.svg" width="60" height="60" alt="G1">
-              </Transition>
+              <img :class="['icon lock', (posts && posts.gates_p2.gate_1_player_2 ? '' : 'disabled'), selfTestEnabled]" src="../assets/Assets/P1/G1-P1 LOCK.png" width="60" height="60" alt="G1">
+              <img :class="['icon', (posts && posts.gates_p1.gate_1_player_1 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Gates/G1.svg" width="60" height="60" alt="G1">
             </div>
             
             <div class="gate gate-2">
-              <Transition>
-                <img :class="['icon', (posts && posts.gates_p1.gate_2_player_1 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Gates/G2.svg" width="60" height="60" alt="G2">
-              </Transition>
+              <img :class="['icon lock', (posts && posts.gates_p2.gate_2_player_2 ? '' : 'disabled'), selfTestEnabled]" src="../assets/Assets/P1/G1-P1 LOCK.png" width="60" height="60" alt="G1">
+              <img :class="['icon', (posts && posts.gates_p1.gate_2_player_1 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Gates/G2.svg" width="60" height="60" alt="G2">
             </div>
 
             <div class="gate gate-3">
-              <Transition>
-                <img :class="['icon', (posts && posts.gates_p1.gate_3_player_1 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Gates/G3.svg" width="60" height="60" alt="G3">
-              </Transition>
+              <img :class="['icon lock', (posts && posts.gates_p2.gate_3_player_2 ? '' : 'disabled'), selfTestEnabled]" src="../assets/Assets/P1/G1-P1 LOCK.png" width="60" height="60" alt="G1">
+              <img :class="['icon', (posts && posts.gates_p1.gate_3_player_1 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Gates/G3.svg" width="60" height="60" alt="G3">
             </div>
 
           </div>
           <div class="flex row justify-content-space-between player-one landmarks">
+
             <div class="landmark landmark-1">
-              <Transition>
-                <img :class="['icon', (posts && posts.lm_p1.landmark_1 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Landmarks/LM1.svg" width="60" height="60" alt="LM1">
-              </Transition>
+              <img :class="['icon', (posts && posts.lm_p1.landmark_1 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Landmarks/LM1.svg" width="60" height="60" alt="LM1">
             </div>
+
             <div class="landmark landmark-2">
-              <Transition>
-                <img :class="['icon', (posts && posts.lm_p1.landmark_2 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Landmarks/LM2.svg" width="60" height="60" alt="LM2">
-              </Transition>
+              <img :class="['icon', (posts && posts.lm_p1.landmark_2 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Landmarks/LM2.svg" width="60" height="60" alt="LM2">
             </div>
+
             <div class="landmark landmark-3">
-              <Transition>
-                <img :class="['icon', (posts && posts.lm_p1.landmark_3 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Landmarks/LM3.svg" width="60" height="60" alt="LM3">
-              </Transition>
+              <img :class="['icon', (posts && posts.lm_p1.landmark_3 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Landmarks/LM3.svg" width="60" height="60" alt="LM3">
             </div>
+
           </div>
         </div> <!-- .col-player-one-icons -->
         <div :class="['hint', selfTestEnabled]" class="flex row justify-content-space-between col col-gates">
@@ -103,41 +98,37 @@
         </div>
         <div class="flex row col col-player-icons col-player-two-icons">
           <div class="flex row justify-content-space-between player-two landmarks">
+
             <div class="landmark-6">
-              <Transition>
-                <img :class="['icon', (posts && posts.lm_p2.landmark_6 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Landmarks/LM6.svg" width="60" height="60" alt="LM6">
-              </Transition>
+              <img :class="['icon', (posts && posts.lm_p2.landmark_6 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Landmarks/LM6.svg" width="60" height="60" alt="LM6">
             </div>
+
             <div class="landmark-5">
-              <Transition>
                 <img :class="['icon', (posts && posts.lm_p2.landmark_5 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Landmarks/LM5.svg" width="60" height="60" alt="LM5">
-              </Transition>
             </div>
+
             <div class="landmark-4">
-              <Transition>
-                <img :class="['icon', (posts && posts.lm_p2.landmark_4 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Landmarks/LM4.svg" width="60" height="60" alt="LM4">
-              </Transition>
-              
+              <img :class="['icon', (posts && posts.lm_p2.landmark_4 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Landmarks/LM4.svg" width="60" height="60" alt="LM4">
             </div>
+
           </div>
           <div class="flex row justify-content-space-between player-two-gates">
+
             <div class="gate gate-3">
-              <Transition>
+                <img :class="['icon lock', (posts && posts.gates_p1.gate_3_player_1 ? '' : 'disabled'), selfTestEnabled]" src="../assets/Assets/P1/G1-P1 LOCK.png" width="60" height="60" alt="G1">
                 <img :class="['icon', (posts && posts.gates_p2.gate_3_player_2 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Gates/G3.svg" width="60" height="60" alt="G3">
-              </Transition>
             </div>
+
             <div class="gate gate-2">
-              <Transition>
+                <img :class="['icon lock', (posts && posts.gates_p1.gate_2_player_1 ? '' : 'disabled'), selfTestEnabled]" src="../assets/Assets/P1/G1-P1 LOCK.png" width="60" height="60" alt="G1">
                 <img :class="['icon', (posts && posts.gates_p2.gate_2_player_2 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Gates/G2.svg" width="60" height="60" alt="G2">
-              </Transition>
             </div>
 
             <div class="gate gate-1">
-              <Transition>
+                <img :class="['icon lock', (posts && posts.gates_p1.gate_1_player_1 ? '' : 'disabled'), selfTestEnabled]" src="../assets/Assets/P1/G1-P1 LOCK.png" width="60" height="60" alt="G1">
                 <img :class="['icon', (posts && posts.gates_p2.gate_1_player_2 ? '' : 'disabled'), selfTestEnabled]" src="../assets/SVG/Gates/G1.svg" width="60" height="60" alt="G1">
-              </Transition>
-            </div>
-
+            </div> 
+             
           </div>
         </div> <!-- .col-player-two-icons -->
       </div> <!-- bar.bottom -->
