@@ -11,3 +11,7 @@ The Run is an IRL game show created by /JasperDiscovers and broadcasted live on 
 * [/JasperDiscovers](https://twitch.tv/JasperDiscovers)
 * [/TicanUK](https://twitch.tv/TicanUK)
 * [/SeriousBanter](https://twitch.tv/SeriousBanter)
+
+## Why is this Vue code so disgusting?
+
+Because I can't really work with it well, yet. I've coded a HTML layout and Vue-i-fied it a bit but it's not great - yet.
