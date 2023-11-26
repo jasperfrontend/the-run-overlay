@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    
+
     <span v-show="posts && posts.self_test === true">
-      <div class="winner self-test-kek">
+      <div class="self-test-kek">
         <img src="https://host.run.city/wp-content/uploads/2023/11/testing-test.gif" alt="">
       </div>
     </span>

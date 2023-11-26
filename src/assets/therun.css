@@ -61,6 +61,24 @@ img {
   justify-content: space-between;
 }
 
+/* self test gif KEKW */
+.self-test-kek {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1920px;
+	height: auto;
+	overflow: hidden;
+	background: #4c8ecc;
+}
+
+.self-test-kek img {
+	width: 60vw;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
 /* game winner overlay */
 .winner .overlay {
   position: fixed;
